@@ -1,3 +1,10 @@
+/*
+ * @lc app=leetcode id=11 lang=rust
+ *
+ * [11] Container With Most Water
+ */
+
+// @lc code=start
 use std::cmp;
 
 impl Solution {
@@ -17,3 +24,5 @@ impl Solution {
         return max_area;
     }
 }
+
+// @lc code=end
