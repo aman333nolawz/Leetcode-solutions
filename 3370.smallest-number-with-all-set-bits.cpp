@@ -1,0 +1,12 @@
+// @leet start
+class Solution {
+public:
+  int smallestNumber(int n) {
+    int i = 2;
+    while (i <= n) {
+      i *= 2;
+    }
+    return i - 1;
+  }
+};
+// @leet end

@@ -1,0 +1,37 @@
+# @leet imports start
+from string import *
+from re import *
+from datetime import *
+from collections import *
+from heapq import *
+from bisect import *
+from copy import *
+from math import *
+from random import *
+from statistics import *
+from itertools import *
+from functools import *
+from operator import *
+from io import *
+from sys import *
+from json import *
+from builtins import *
+from typing import *
+# @leet imports end
+
+
+# @leet start
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        k = 0
+        for i in range(len(nums) - 1, -1, -1):
+            if nums[i] == val:
+                val = nums.pop(i)
+                nums.append(val)
+            else:
+                k += 1
+        return k
+
+
+# @leet end
+
